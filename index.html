@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <div class="netflix-logo">
+                <span class="netflix-text">NETFLIX</span>
+            </div>
+        </div>
+        <ul class="navbar-nav">
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link">TV Shows</a></li>
+            <li><a href="#" class="nav-link">Movies</a></li>
+            <li><a href="#" class="nav-link">New & Popular</a></li>
+            <li><a href="#" class="nav-link">My List</a></li>
+        </ul>
+        <div class="navbar-right">
+            <div class="navbar-search">
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" placeholder="Search..." class="search-input">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Netflix</h1>
+            <p class="hero-description">Watch unlimited movies, TV shows, and more. Stream anywhere, anytime.</p>
+            <div class="hero-buttons">
+                <button class="play-btn"><i class="fas fa-play"></i> Play</button>
+                <button class="more-info-btn"><i class="fas fa-info-circle"></i> More Info</button>
+            </div>
+            <div class="hero-features">
+                <div class="feature">
+                    <i class="fas fa-tv"></i>
+                    <span>Watch on any device</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-download"></i>
+                    <span>Download for offline viewing</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-infinity"></i>
+                    <span>Unlimited streaming</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </header>
+
+    <!-- Content Rows -->
+    <main>
+        <section class="content-row">
+            <h2>Trending Now</h2>
+            <div class="slider-container">
+                <button class="slider-arrow prev-arrow">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="content-slider">
+                    <div class="content-card">
+                        <img src="662b46f86f12124be63d8513-poster-stop-online-thor-2-the-dark-world.jpg" alt="Thor: The Dark World">
+                        <div class="card-overlay">
+                            <h3>Thor: The Dark World</h3>
+                            <p>Action, Adventure, Fantasy</p>
+                            <div class="card-buttons">
+                                <button><i class="fas fa-play"></i> Play</button>
+                                <button><i class="fas fa-info-circle"></i> More Info</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- More content cards will be added dynamically -->
+                </div>
+                <button class="slider-arrow next-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="content-row">
+            <h2>Popular on Netflix</h2>
+            <div class="slider-container">
+                <button class="slider-arrow prev-arrow">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="content-slider">
+                    <!-- Content cards will be added dynamically -->
+                </div>
+                <button class="slider-arrow next-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="content-row">
+            <h2>Continue Watching</h2>
+            <div class="slider-container">
+                <button class="slider-arrow prev-arrow">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="content-slider">
+                    <!-- Content cards will be added dynamically -->
+                </div>
+                <button class="slider-arrow next-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="netflix-logo">
+                        <span class="netflix-text">NETFLIX</span>
+                    </div>
+                    <p class="brand-tagline">Watch anywhere. Cancel anytime.</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Stay Updated</h3>
+                    <p class="newsletter-text">Get the latest updates and exclusive offers</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" placeholder="Enter your email">
+                        </div>
+                        <button type="submit">
+                            <span>Subscribe</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>About Netflix</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Careers</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Investor Relations</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Legal Notices</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Help Center</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Account</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Center</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Media Center</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Redeem Gift Cards</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Ways to Watch</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Community</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Netflix Community</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Gift Cards</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Netflix Originals</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Netflix Merchandise</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Netflix Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Privacy</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Terms of Use</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Cookie Preferences</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Corporate Information</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Speed Test</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <div class="language-selector">
+                        <div class="language-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="language-dropdown">
+                            <button class="language-button">
+                                <span class="current-language">English</span>
+                                <i class="fas fa-chevron-up"></i>
+                            </button>
+                            <div class="language-options">
+                                <button class="language-option active">English</button>
+                                <button class="language-option">Español</button>
+                                <button class="language-option">Français</button>
+                                <button class="language-option">Deutsch</button>
+                                <button class="language-option">Italiano</button>
+                                <button class="language-option">Português</button>
+                                <button class="language-option">Русский</button>
+                                <button class="language-option">日本語</button>
+                                <button class="language-option">한국어</button>
+                                <button class="language-option">中文</button>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="copyright">Netflix Clone © 2024</p>
+                </div>
+                <div class="footer-bottom-right">
+                    <a href="#" class="footer-link">Terms of Service</a>
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
